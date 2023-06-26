@@ -7,3 +7,19 @@ body {
   font-weight: 500;
   font-style: normal;
 }
+
+h1 {
+  letter-spacing: 0.1rem;
+}
+
+.wf-loading {
+  display: none;
+}
+
+.wf-active {
+  display: block;
+}
+
+.wf-inactive {
+  font-family: @apply font-nsj;
+}

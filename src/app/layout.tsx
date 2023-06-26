@@ -1,7 +1,7 @@
 import './globals.css'
 import { Noto_Sans_JP } from 'next/font/google'
 
-const nsj = Noto_Sans_JP({ subsets: ['latin'] })
+const nsj = Noto_Sans_JP({ subsets: ['latin'], variable: '--font-nsj' })
 
 export const metadata = {
   title: 'Ittetsu Takaki - Portfolio Site',
