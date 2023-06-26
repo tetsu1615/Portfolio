@@ -10,7 +10,10 @@ module.exports = {
       fontFamily: {
         nsj: ['var(--font-nsj)'],
       },
+      colors: {
+        black: '#3c3c3c',
+      },
     },
-  },
-  plugins: [],
+    plugins: [],
+  }
 }
