@@ -1,5 +1,6 @@
 import './globals.css'
 import { Noto_Sans_JP } from 'next/font/google'
+import Script from 'next/script'
 
 const nsj = Noto_Sans_JP({ subsets: ['latin'], variable: '--font-nsj' })
 
@@ -27,7 +28,25 @@ export default function RootLayout({
               },
               h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)})(document);
             `
-        }} /></head>
+        }} />
+        <Script
+          strategy="afterInteractive"
+          src={`https://www.googletagmanager.com/gtag/js?id=G-2ZVW912L9Z`}
+        />
+        <Script
+          id="gtag-init"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-2ZVW912L9Z');
+            `,
+          }}
+        />
+      </head>
       <body >
         {children}
       </body>
