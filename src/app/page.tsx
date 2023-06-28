@@ -23,7 +23,7 @@ export default function Home() {
         <Link className='mx-auto mb-6 w-fit bg-black px-2 text-xl text-white ' href={"https://tetsuit.notion.site/Portfolio-cb811b66827c4c55b313d3123ed0c835"}>👀 View in Notion</Link>
       </div>
 
-      <div className='mt-2 flex justify-center gap-4 text-center'>
+      <div className='my-2 flex justify-center gap-4 text-center'>
         <Link href="https://twitter.com/tetsuuniv/" className='text-blue-500 hover:underline hover:opacity-80'>Twitter</Link>
         <Link href="mailto:tetsu@1-fe.net" className='text-blue-500 hover:underline hover:opacity-80'>Mail</Link>
       </div>
